@@ -201,7 +201,7 @@ body {
 .btn {
   padding: 12px 15px;
   text-decoration: none;
-  margin-right: 10px;
+  margin-buttom: 8px;
   display: flex;
   flex-direction: column;
   border-radius: 4px;
@@ -615,6 +615,7 @@ main p {
   height: 120px;
   object-fit: contain;
   margin-bottom: 20px;
+  border-radius: 15px;
 }
 
 .service-card h2 {
