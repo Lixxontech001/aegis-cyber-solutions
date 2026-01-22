@@ -199,9 +199,11 @@ body {
 }
 
 .btn {
-  padding: 7px 9px;
+  padding: 12px 15px;
   text-decoration: none;
   margin-right: 10px;
+  display: flex;
+  flex-direction: column;
   border-radius: 4px;
   font-size: 14px;
 }
