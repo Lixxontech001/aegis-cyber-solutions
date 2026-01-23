@@ -9,7 +9,7 @@ body {
   background:  rgb(255, 255, 255);
   color: #0f172a;
 }
-.company-logo {
+/*.company-logo {
   position: absolute;
   top: 15px;
   left: 50%;
@@ -23,7 +23,7 @@ body {
   height: 85px;
   width: 120px;
   margin-right: 1100px;
-}
+}*/
 /* Sidebar x
 .sidebar {
   position: fixed;
@@ -216,6 +216,7 @@ body {
   padding: 12px 15px;
   text-decoration: none;
   margin: 8px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   border-radius: 4px;
@@ -580,9 +581,6 @@ main p {
 }
 
 /* Buttons already exist, but ensure contrast */
-.hero-content .btn.primary {
-  box-shadow: 0 0 25px rgba(0, 255, 170, 0.4);
-}
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
@@ -728,6 +726,7 @@ main p {
   background-color: #2563eb;
   transform:  translateY(-3px);
 }
+
 
 
 
