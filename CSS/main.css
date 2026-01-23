@@ -19,7 +19,7 @@ body {
   justify-content: left;
   align-items: left;
 }
-.logo {
+.logoo {
   height: 85px;
   width: 120px;
   margin-right: 1100px;
@@ -728,4 +728,5 @@ main p {
   background-color: #2563eb;
   transform:  translateY(-3px);
 }
+
 
