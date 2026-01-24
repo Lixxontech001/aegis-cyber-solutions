@@ -9,7 +9,7 @@ body {
   background:  rgb(255, 255, 255);
   color: #0f172a;
 }
-/*.company-logo {
+.company-logo {
   position: absolute;
   top: 15px;
   left: 50%;
@@ -23,7 +23,7 @@ body {
   height: 85px;
   width: 120px;
   margin-right: 1100px;
-}*/
+}
 /* Sidebar x
 .sidebar {
   position: fixed;
@@ -799,6 +799,7 @@ main p {
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
+  width: 90%;
   transition: all 0.3s ease;
 }
 
@@ -836,18 +837,21 @@ main p {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 100vh;
+    min-height: 80vh;
     border-radius: 12px;
   }
   .hero-content h1 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+    width: 90%;
   }
   .hero-content p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
+    width: 90%;
   }
   .actions {
     flex-direction: column;
   }
 }
+
 
 
