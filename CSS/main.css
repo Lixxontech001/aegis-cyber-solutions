@@ -834,19 +834,20 @@ main p {
   }
 }
 
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
   .hero {
-    min-height: 80vh;
+    min-height: 100vh;
     border-radius: 12px;
   }
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .hero-content p {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
   .actions {
     flex-direction: column;
   }
-}*/
+}
+
 
