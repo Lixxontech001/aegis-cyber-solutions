@@ -10,9 +10,9 @@ body {
   color: #0f172a;
 }
 .company-logo {
-  position: absolute;
+  position: fixed;
   top: 15px;
-  left: 50%;
+  left: 85%;
   transform: translateX(-50%);
   z-index: 1;
   display: flex;
@@ -799,7 +799,7 @@ main p {
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
-  width: 90%;
+  width: 100%;
   transition: all 0.3s ease;
 }
 
@@ -842,16 +842,17 @@ main p {
   }
   .hero-content h1 {
     font-size: 1.9rem;
-    width: 90%;
+    width: 100%;
   }
   .hero-content p {
     font-size: 0.95rem;
-    width: 90%;
+    width: 100%;
   }
   .actions {
     flex-direction: column;
   }
 }
+
 
 
 
