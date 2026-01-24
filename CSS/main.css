@@ -24,6 +24,31 @@ body {
   width: 120px;
   margin-right: 1100px;
 }
+.company-logo {
+  position: fixed; /* fixed so it stays at top */
+  top: 15px;
+  left: 20px; /* adjust spacing from left edge */
+  z-index: 1100; /* above sidebar toggle (if toggle is 1100) */
+}
+
+.company-logo img.logoo {
+  height: 85px; /* logo height */
+  width: auto; /* maintain aspect ratio */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .company-logo img.logo {
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-logo img.logo {
+    height: 50px;
+  }
+}
+
 /* Sidebar x
 .sidebar {
   position: fixed;
@@ -852,6 +877,7 @@ main p {
     flex-direction: column;
   }
 }
+
 
 
 
