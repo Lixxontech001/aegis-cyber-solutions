@@ -834,7 +834,7 @@ main p {
   }
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .hero {
     min-height: 80vh;
     border-radius: 12px;
@@ -848,4 +848,5 @@ main p {
   .actions {
     flex-direction: column;
   }
-}
+}*/
+
