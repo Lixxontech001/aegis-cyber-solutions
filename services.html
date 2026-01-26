@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q25QC0W47F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q25QC0W47F');
+</script>
+  <meta charset="UTF-8">
+  <title>Cybersecurity Services | Aegis Cyber Solutions</title>
+<meta name="description" content="Explore professional cybersecurity services including digital protection, cyber awareness training, and ethical hacking solutions.">
+
+  <meta name="description" content="Aegis Cyber Solutions provides cybersecurity services, ethical hacking awareness, online protection, cyber risk prevention, and digital safety solutions for individuals and businesses.">
+
+<meta name="keywords" content="
+cybersecurity,
+ethical hacking,
+cyber awareness,
+digital security,
+online protection,
+website security,
+data protection,
+internet safety,
+ethical hacker,
+cybercrime prevention,
+penetration testing,
+security consulting,
+information security,
+network security,
+malware protection,
+phishing prevention,
+cyber risk management,
+IT security services,
+cyber education,
+cyber training,
+Nigeria cybersecurity,
+African cybersecurity,
+small business security,
+personal data protection,
+online fraud prevention,
+web security services,
+cloud security,
+cyber defense,
+digital privacy
+">
+
+<meta name="author" content="Aegis Cyber Solutions">
+
+<meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+  <!--
+  <div class="company-logo">
+    <img src="assets\AEGIS CYBER SOLUTION LOGO.png" class='logoo" alt="company logo">
+  </div> -->
+  <div id="sidebar-overlay" onclick="closeSidebar()"></div>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <div class="brand">
+      <h2>Aegis</h2>
+      <span>Cyber Solutions</span>
+    </div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="awareness.html">Cyber Awareness</a></li>
+      <li><a href="ethics.html">Ethics & Compliance</a></li>
+    </ul>
+  </nav>
+
+  <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+
+  <main class="main-content">
+
+    <header class="page-header">
+      <h1>Our Services</h1>
+      <p>
+        All services are delivered through ethical, authorized, and professional
+        cybersecurity processes. No illegal access. No impersonation.
+      </p>
+    </header>
+
+    <section class="service-grid">
+
+      <!-- CARD -->
+      <div class="service-card" data-service="Account Recovery Assistance">
+        <img src="assets/cyber recovery.jpg" alt="Cyber account recovery illustration"
+          class="service-icon">
+        <h2>Account Recovery Assistance</h2>
+        <p>Professional recovery of compromised social media and digital accounts.</p>
+        <button class="request-btn" onclick="openServiceModal(this)">Request Service</button>
+      </div>
+
+      <div class="service-card" data-service="Threat & Harassment Response">
+        <img src="assets//cyber threat.png" alt="Online threat response cybersecurity illustration"
+          class="service-icon">
+        <h2>Threat & Harassment Response</h2>
+        <p>Guidance and response support for digital threats, harassment, or extortion.</p>
+        <button class="request-btn"onclick="openServiceModal(this)">Request Service</button>
+      </div>
+
+      <div class="service-card" data-service="Identity & Impersonation Protection">
+        <img src="assets//impersonation.jpg" alt="Digital identity protection illustration"
+          class="service-icon">
+        <h2>Identity & Impersonation Protection</h2>
+        <p>Detection and mitigation of impersonation and account cloning incidents.</p>
+        <button class="request-btn" onclick="openServiceModal(this)">Request Service</button>
+      </div>
+
+      <div class="service-card" data-service="Online Reputation Management">
+        <img src="assets/reputation2.jpg" alt="Online reputation management illustration"
+          class="service-icon">
+        <h2>Online Reputation Management</h2>
+        <p>Strategic recovery and protection of online presence and credibility.</p>
+        <button class="request-btn" onclick="openServiceModal(this)">Request Service</button>
+      </div>
+
+      <div class="service-card" data-service="Digital Security Hardening">
+        <img src="assets/cyber hardening.jpg" alt="Cybersecurity hardening illustration"
+          class="service-icon">
+        <h2>Digital Security Hardening</h2>
+        <p>Strengthening account, device, and platform security configurations.</p>
+        <button class="request-btn" onclick="openServiceModal(this)">Request Service</button>
+      </div>
+
+      <div class="service-card" data-service="Secure Promotion & Visibility">
+        <img src="assets/cyber promotion.jpg" alt="Secure digital promotion illustration"
+          class="service-icon">
+        <h2>Secure Promotion & Visibility</h2>
+        <p>Safe visibility and promotion without compromising account security.</p>
+        <button class="request-btn" onclick="openServiceModal(this)">Request Service</button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- MODAL -->
+  <div id="service-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeServiceModal()">&times;</span>
+
+      <h2 id="modal-service-name"></h2>
+      <p class="modal-note">
+        This request confirms you are the legitimate owner or authorized
+        representative of the affected account(s).
+      </p>
+
+      <label class="checkbox">
+        <input type="checkbox" id="modal-consent">
+        I confirm I am authorized to request this service.
+      </label>
+
+      <textarea id="modal-description" placeholder="Briefly describe your issue..."></textarea>
+
+      <input type="email" id="modal-email" placeholder="Your Gmail address">
+
+      <button class="btn primary" onclick="sendServiceEmail()">
+        Send Secure Request
+      </button>
+    </div>
+  </div>
+
+  <script src="JS/main.js"></script>
+
+  <script>
+    function openServiceModal(button) {
+      const service = button.parentElement.getAttribute('data-service');
+      document.getElementById('modal-service-name').textContent = service;
+      document.getElementById('service-modal').style.display = 'flex';
+    }
+
+    function closeServiceModal() {
+      document.getElementById('service-modal').style.display = 'none';
+    }
+
+    function sendServiceEmail() {
+      const service = document.getElementById('modal-service-name').textContent;
+      const consent = document.getElementById('modal-consent').checked;
+      const desc = document.getElementById('modal-description').value.trim();
+      const email = document.getElementById('modal-email').value.trim();
+
+      if (!consent || !desc || !email) {
+        alert('All fields are required and consent must be confirmed.');
+        return;
+      }
+
+      const body =
+        `Service Requested: ${service}
+
+Issue Description:
+${desc}
+
+Client Gmail:
+${email}
+
+Consent:
+Confirmed`;
+
+      window.location.href =
+        `mailto:contact.aegiscyber@gmail.com?subject=${encodeURIComponent(service + ' Request')}&body=${encodeURIComponent(body)}`;
+    }
+  </script>
+  <footer class="site-footer">
+    <div class="footer-container">
+  
+      <!-- Brand / About -->
+      <div class="footer-brand">
+        <h2>Aegis Cyber Solutions</h2>
+        <p>
+          A digital security and recovery firm dedicated to protecting online
+          identities, systems, and reputations through ethical cyber operations.
+        </p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="awareness.html">Cyber Awareness</a></li>
+          <li><a href="ethics.html">Ethics & Compliance</a></li>
+        </ul>
+      </div>
+  
+      <!-- Services -->
+      <div class="footer-links">
+        <h3>Core Services</h3>
+        <ul>
+          <li>Account Recovery</li>
+          <li>Threat Response</li>
+          <li>Reputation Management</li>
+          <li>Digital Protection</li>
+        </ul>
+      </div>
+  
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>Email:<br>
+          <a href="mailto:contact.aegiscyber@gmail.com">
+            contact.aegiscyber@gmail.com
+          </a>
+        </p>
+        <p>Service Requests:<br>Via Official Email Only</p>
+      </div>
+  
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2026 Aegis Cyber Solutions. All rights reserved.</p>
+      <p class="footer-note">
+        We do not engage in illegal access, surveillance, or law-enforcement impersonation.
+      </p>
+    </div>
+    </footer>
+
+</body>
+
+
+</html>
+
+
+
+
