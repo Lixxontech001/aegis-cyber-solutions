@@ -52,8 +52,8 @@ body {
 
 /* Logo */
 .logo-wrap img {
-  height: 62px;
-  width: auto;
+  height: 66px;
+  width: 68px;
 }
 
 /* Push content down so header doesn't overlap */
@@ -903,6 +903,7 @@ main p {
     flex-direction: column;
   }
 }
+
 
 
 
